@@ -7,7 +7,7 @@ namespace PointAndLines
         public int X;
         public int Y;
 
-    // Constrictor
+    // Constructor
         public Point (int x, int y)
         {
             X = x;
