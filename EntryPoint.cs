@@ -1,5 +1,5 @@
-﻿
-
+﻿// adding so I can use my 'Point Class' which is in the 'PointsAndLines' folder
+using PointAndLines;
     class EntryPoint
     {
         static void Main()
@@ -7,19 +7,21 @@
         
         // going to make an 'instance' of the 'Point Class'
 
-            Point point = new Point();
+            Point point = new Point(5,3);
 
-            // assigning values using '.' dot notation
+        // An Object without arguments
+        Point pointTwo = new Point();
 
-            // I use my new ' point object' to access these properies in the 'Point' Class
+        // assigning values instead of using arguments
+        pointTwo.X = 7;
 
-            point.x = 5;
-            point.y = 3;
+            System.Console.WriteLine(point.X);
 
-            System.Console.WriteLine(point.x);
+            System.Console.WriteLine(point.Y);
 
-            System.Console.WriteLine(point.y);
+            System.Console.WriteLine(pointTwo.X);
 
+      
 
         }
     }
