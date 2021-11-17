@@ -6,20 +6,13 @@ using PointAndLines;
         {
 
         // going to make an 'instance' of the 'User Class'
+        // setting the 'username' in the constructor
+        User user = new User("David");
 
-          // giving values through the constructor
-          // User user = new User(5,3);
-
-        // ** giving values through the 'properties' **
-
-          // going to make an 'instance' of the 'User Class'
-        User user = new User();
-
-        user.Username = "abcd";
-        user.Password = 2;
+        user.Password = 4;
 
         System.Console.WriteLine(user.Username);
-        
+               
 
       
 

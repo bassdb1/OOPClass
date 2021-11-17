@@ -14,34 +14,17 @@ namespace PointAndLines
 
             get
             {
-                return "The username is " + username;            }
-
-            set
-            {
-                // Validation - only Set username if length is between 4 and 10 characters.
-
-                if (value.Length >= 4 && value.Length <= 10)
-                {
-                    username = value;
-                }
-                else
-                {
-                    System.Console.WriteLine("Oops, this is not a valid username!  Please use a username with 4 to 10 characters");
-                }
+                return "The username is " + username;            
             }
 
-               
+                         
         }
 
         // Password Property
 
         public int Password 
         {
-            get
-            {
-                return password;
-            }
-
+           
             set
             {
                 // Validation - only Set password if length is between 4 and 10 characters.
@@ -66,10 +49,10 @@ namespace PointAndLines
         }
 
         // Constructor
-        public User (string username, int password)
+        public User (string username)
         {
-            Username = username;
-            this.password = password;
+            this.username = username;
+            
         }
 
     
