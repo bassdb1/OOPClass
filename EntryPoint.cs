@@ -9,9 +9,20 @@ using PointAndLines;
         // setting the 'username' in the constructor
         User user = new User("David");
 
-        user.Password = 4;
+        //making another 'instance' of the 'User Class'
+        User user2 = new User();
 
-        System.Console.WriteLine(user.Username);
+        // Printing out the Static Variable 'ID'
+        System.Console.WriteLine(User.ID);
+
+
+
+
+
+
+        // user.Password = 4;
+
+        // System.Console.WriteLine(user.Username);
                
 
       

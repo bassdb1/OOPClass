@@ -4,6 +4,9 @@ namespace PointAndLines
     // Adding a new class called User
     class User
     {
+      // Static Variable - ID
+        public static int ID;
+
       // Fields 
         private string username;
         private int password;
@@ -45,12 +48,17 @@ namespace PointAndLines
         // You can have multiple Constructors, this will create a new Point Ov=bject, without arguments
         public User()
         {
-
+            // Increment my Static Variable 'ID' whenever a new 'Instance' of the User class occurs
+            // .. in my Property
+            ID++;
         }
 
         // Constructor
         public User (string username)
         {
+            // Increment my Static Variable 'ID' whenever a new 'Instance' of the User class occurs
+            // .. in my Contructor
+            ID++;
             this.username = username;
             
         }
