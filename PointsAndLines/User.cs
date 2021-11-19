@@ -4,12 +4,14 @@ namespace PointAndLines
     // Adding a new class called User
     class User
     {
-      // Static Variable - ID
-        public static int ID;
+      // Static Variable - currentID
+        public static int currentID;
 
       // Fields 
         private string username;
         private int password;
+        public const int HEIGHT = 180; // const constant, using centimeters
+        public readonly int ID; // Readonly constant 
 
         // Username Property
         public string Username
@@ -50,7 +52,8 @@ namespace PointAndLines
         {
             // Increment my Static Variable 'ID' whenever a new 'Instance' of the User class occurs
             // .. in my Property
-            ID++;
+            currentID++;
+            id = currentID;
         }
 
         // Constructor
@@ -58,7 +61,8 @@ namespace PointAndLines
         {
             // Increment my Static Variable 'ID' whenever a new 'Instance' of the User class occurs
             // .. in my Contructor
-            ID++;
+            currentID++;
+            id = currentID;
             this.username = username;
             
         }
