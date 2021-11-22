@@ -46,6 +46,7 @@
     <Compile Include="EntryPoint.cs" />
     <Compile Include="PointsAndLines\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Race.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

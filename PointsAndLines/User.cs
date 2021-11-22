@@ -7,11 +7,14 @@ namespace PointAndLines
       // Static Variable - currentID
         public static int currentID;
 
-      // Fields 
+        // Fields 
+        public Race race;  // Using Race Class, new 'race' field, with data type 'Race'
         private string username;
         private int password;
-        public const int HEIGHT = 180; // const constant, using centimeters
-        public readonly int ID; // Readonly constant 
+        // public const int HEIGHT = 180; // const constant, using centimeters
+
+        public readonly int HEIGHT; // Readonly constant, define in the constructor 
+        public readonly int ID; // Readonly constant, define in the constructor 
 
         // Username Property
         public string Username
@@ -53,7 +56,7 @@ namespace PointAndLines
             // Increment my Static Variable 'ID' whenever a new 'Instance' of the User class occurs
             // .. in my Property
             currentID++;
-            id = currentID;
+            ID = currentID;
         }
 
         // Constructor
@@ -62,9 +65,18 @@ namespace PointAndLines
             // Increment my Static Variable 'ID' whenever a new 'Instance' of the User class occurs
             // .. in my Contructor
             currentID++;
-            id = currentID;
+            ID = currentID;
             this.username = username;
             
+            // use an if statement to set height of race by type
+            if (race == Race.Martian)
+            {
+                HEIGHT = 100;
+            }
+            else if (race == Race.Earthling )
+            {
+                HEIGHT = 180;
+            }
         }
 
     
