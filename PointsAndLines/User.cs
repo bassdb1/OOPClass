@@ -60,20 +60,24 @@ namespace PointAndLines
         }
 
         // Constructor
-        public User (string username)
+        public User (string username, Race race) // (arguments in the braces)
         {
             // Increment my Static Variable 'ID' whenever a new 'Instance' of the User class occurs
             // .. in my Contructor
             currentID++;
             ID = currentID;
+            // Using (this.username = field value), (= username = argument value)
             this.username = username;
+            // Using (this.race = field value), (= race = argument value)
+            // .. we are getting the value from the argument, and then assigning to the field value)
+            this.race = race;
             
             // use an if statement to set height of race by type
-            if (race == Race.Martian)
+            if (this.race == Race.Martian)
             {
                 HEIGHT = 100;
             }
-            else if (race == Race.Earthling )
+            else if (this.race == Race.Earthling )
             {
                 HEIGHT = 180;
             }
