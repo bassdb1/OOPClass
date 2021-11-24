@@ -14,6 +14,7 @@ using PointAndLines;
         User user2 = new User();
         System.Console.WriteLine("user2 ID = " + user2.ID);
 
+       
         //Count How many 'Objects' have been made.
         System.Console.WriteLine("Total number of objects is " + User.currentID);
 
