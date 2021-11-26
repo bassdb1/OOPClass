@@ -1,5 +1,8 @@
 ﻿// adding so I can use my 'Point Class' which is in the 'PointsAndLines' folder
+
+using OOPClass;
 using PointAndLines;
+using System;
     class EntryPoint
     {
         static void Main()
@@ -18,19 +21,18 @@ using PointAndLines;
         //Count How many 'Objects' have been made.
         System.Console.WriteLine("Total number of objects is " + User.currentID);
 
-      
+        // Use the ColorfulWriteLine Method, from our Utilities Static Class
+        Utilities.ColorfulWriteLine(user.Username, ConsoleColor.Green);
 
 
 
 
 
 
-        // user.Password = 4;
 
-        // System.Console.WriteLine(user.Username);
-               
 
-      
+
+
 
         }
     }
